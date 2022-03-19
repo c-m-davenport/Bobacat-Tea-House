@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Lemon-Milk";
+    src: url("fonts/lemonmilk-medium.woff2") format("woff2"),
+         url("fonts/lemonmilk-medium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Basic body styling and colors*/
+body {
+font-family: Arial, -apple-system, Helvectica, "Lemon-Milk";
+--dark-grey: #343434;
+--milk-tea: #dbc99a;
+--off-white: #efefef;
+
+margin: 0;
+width: 100vw;
+overflow-x: hidden;
+}
+
+nav {
+    font-family: "Lemon-Milk", Fallback, Arial;
+    background-color: var(--dark-grey);
+    color: var(--off-white);
+    display: flex;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+}
+
+nav img {
+    height: 150px;
+}
+
+nav .links ul{
+    text-align: center;
+}
+
+nav .links li {
+    display: inline-flex;
+    list-style-type: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 2em;
+    margin-right: 2em;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--off-white);
+    text-decoration: underline;
+}
+
+nav .list .links li:hover {
+    color: var(--off-white);
+}
+
+/*CSS that adjusts the website for desktop use*/
+@media only screen and (min-width: 768px) {
+
+}
