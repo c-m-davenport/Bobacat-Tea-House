@@ -24,7 +24,7 @@ body {
 
     margin: 0;
     width: 100vw;
-    background-color: var(--off-white);
+    background-color: var(--milk-tea);
     display: block;
 }
 
@@ -109,9 +109,13 @@ nav .list .links li:hover {
     fill: #DBC99A;
 }
 
+.straw {
+
+}
+
 .milk-tea-area {
     position: absolute;
-    top: calc(var(--milk-tea-wave-distance) + 218px);
+    top: calc(var(--milk-tea-wave-distance) + 217px);
     background-color: var(--milk-tea);
     width: 100vw;
     min-height: 100%;
@@ -119,6 +123,21 @@ nav .list .links li:hover {
     z-index: 2;
 }
 
+.content-box {
+    display: flex;
+    text-align: center;
+    margin: 4em;
+    border-radius: 25px;
+    background-color: var(--dark-grey);
+    width: auto;
+    height: 500px;
+    padding: 2em;
+    color: var(--off-white);
+}
+
+.content-box p {
+    text-align: left;
+}
 
 /*CSS that adjusts the website for desktop use*/
 @media only screen and (min-width: 768px) {
