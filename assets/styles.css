@@ -32,11 +32,11 @@ nav {
 }
 
 nav img {
-    height: 150px;
+    height: 250px;
 }
 
 nav .links ul{
-    text-align: center;
+    text-align: left;
 }
 
 nav .links li {
@@ -44,8 +44,8 @@ nav .links li {
     list-style-type: none;
     font-size: 1.5em;
     font-weight: bold;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
     position: relative;
     flex-wrap: wrap;
 }
