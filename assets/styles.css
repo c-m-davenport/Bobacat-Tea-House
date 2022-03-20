@@ -29,6 +29,7 @@ nav {
     width: 100%;
     z-index: 10;
     align-items: center;
+    font-size: 1.5em;
 }
 
 nav img {
@@ -46,8 +47,10 @@ nav .links li {
     font-weight: bold;
     margin-left: 1em;
     margin-right: 1em;
+    margin-bottom: .5em;
     position: relative;
     flex-wrap: wrap;
+    
 }
 
 nav a {
