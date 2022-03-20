@@ -77,7 +77,7 @@ nav .list .links li:hover {
 }
 
 .background-photo {
-    position: relative;
+    position: fixed;
     z-index: 0;
     width: 100%;
     top: 250px;
