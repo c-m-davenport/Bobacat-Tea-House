@@ -26,7 +26,7 @@ body {
 
     margin: 0;
     width: 100vw;
-    background-color: var(--milk-tea);
+    background-color: var(--dark-grey);
     display: block;
     max-width: 100%;
     overflow-x: hidden;
@@ -117,7 +117,7 @@ nav .list .links li:hover {
     z-index: 1;
     position: relative;
     top: 300px;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -125,14 +125,14 @@ nav .list .links li:hover {
     position: absolute;
     top: calc(var(--milk-tea-wave-distance) + 217px);
     background-color: var(--milk-tea);
-    width: 100vw;
+    width: 100%;
     margin: 0;
     z-index: 2;
 }
 
 .boba-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     z-index: 10;
     bottom: 0;
 }
