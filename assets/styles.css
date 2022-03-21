@@ -29,7 +29,6 @@ body {
     background-color: var(--dark-grey);
     display: block;
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 nav {
@@ -37,7 +36,7 @@ nav {
     background-color: var(--dark-grey);
     color: var(--off-white);
     display: flex;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 11;
@@ -81,10 +80,11 @@ nav .list .links li:hover {
 }
 
 .background-photo {
-    position: fixed;
-    z-index: -1;
+    position: sticky;
+    z-index: 0;
     width: 100%;
     top: var(--logo-height);
+    max-height: 100vw;
 }
 
 /*Boba shapes*/
@@ -115,10 +115,10 @@ nav .list .links li:hover {
 
 .straw {
     z-index: 1;
-    position: relative;
-    top: 300px;
+    position: absolute;
     width: 100%;
     overflow-x: hidden;
+    top: 350px;
 }
 
 .milk-tea-area {
@@ -147,6 +147,10 @@ nav .list .links li:hover {
     height: 500px;
     padding: 2em;
     color: var(--off-white);
+}
+
+.tea-container {
+
 }
 
 .content-box p {
