@@ -135,6 +135,7 @@ nav .list .links li:hover {
     border-radius: 25px;
     background-color: var(--darker-grey);
     width: auto;
+    min-height: 500px;
     height: auto;
     padding: 2em;
     color: var(--off-white);
