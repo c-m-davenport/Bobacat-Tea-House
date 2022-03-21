@@ -18,9 +18,11 @@
 body {
     font-family: Arial, -apple-system, Helvectica, "Lemon-Milk", "Comfortaa";
     --dark-grey: #343434;
+    --darker-grey: #131313;
     --milk-tea: #dbc99a;
     --off-white: #efefef;
     --milk-tea-wave-distance: 700px;
+    --logo-height: 250px;
 
     margin: 0;
     width: 100vw;
@@ -36,13 +38,13 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 11;
     align-items: center;
     font-size: 1.5em;
 }
 
 nav a img {
-    height: 250px;
+    height: var(--logo-height);
     margin: 1em;
 }
 
@@ -78,9 +80,9 @@ nav .list .links li:hover {
 
 .background-photo {
     position: fixed;
-    z-index: 0;
+    z-index: -1;
     width: 100%;
-    top: 250px;
+    top: var(--logo-height);
 }
 
 /*Boba shapes*/
@@ -93,7 +95,7 @@ nav .list .links li:hover {
     line-height: 0;
     padding: 0;
     margin: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .wave-tea svg {
@@ -110,7 +112,11 @@ nav .list .links li:hover {
 }
 
 .straw {
-
+    z-index: 1;
+    position: relative;
+    top: 300px;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .milk-tea-area {
@@ -118,9 +124,15 @@ nav .list .links li:hover {
     top: calc(var(--milk-tea-wave-distance) + 217px);
     background-color: var(--milk-tea);
     width: 100vw;
-    min-height: 100%;
     margin: 0;
     z-index: 2;
+}
+
+.boba-container {
+    position: relative;
+    width: 100vw;
+    z-index: 10;
+    bottom: 0;
 }
 
 .content-box {
@@ -128,16 +140,18 @@ nav .list .links li:hover {
     text-align: center;
     margin: 4em;
     border-radius: 25px;
-    background-color: var(--dark-grey);
+    background-color: var(--darker-grey);
     width: auto;
     height: 500px;
     padding: 2em;
     color: var(--off-white);
+
 }
 
 .content-box p {
     text-align: left;
 }
+
 
 /*CSS that adjusts the website for desktop use*/
 @media only screen and (min-width: 768px) {
