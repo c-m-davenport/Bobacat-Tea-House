@@ -28,6 +28,8 @@ body {
     width: 100vw;
     background-color: var(--milk-tea);
     display: block;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
@@ -145,7 +147,6 @@ nav .list .links li:hover {
     height: 500px;
     padding: 2em;
     color: var(--off-white);
-
 }
 
 .content-box p {
